@@ -70,14 +70,14 @@ function handleMove(position) {
 }
 
 function playAgain() {
-    const again = prompt(`Player would you like to play again? y/n`);
+    const again = prompt(`Would you like to play again? (y/n):`);
         if (again === "y")
         {
            startGame();
         }
         else {
             gameActive = false;
-            console.log("thanks for playing!");
+            console.log("Thanks for playing!");
             return true;
         }
 }
@@ -108,6 +108,6 @@ function checkWin() {
   });
 }
 
-// continue plaaying until someone wins or theres a draw 
+// continue playing until someone wins or theres a draw 
 
 startGame();
